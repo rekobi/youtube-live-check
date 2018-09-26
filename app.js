@@ -6,7 +6,7 @@ let setting = require('./settings')
 
 
 	request({
-		url: setting.channel.kanae,
+		url: "https://www.youtube.com/user/kazuch0924games",
 		strictSSL: true,
 		// agentClass: Agent,
 		// timeout: 30000,
