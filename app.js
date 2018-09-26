@@ -6,10 +6,10 @@ let setting = require('./settings')
 
 
 	request({
-		url: "https://www.youtube.com/user/kazuch0924games",
+		url: setting.channel.tsukinoMito,
 		strictSSL: true,
 		// agentClass: Agent,
-		// timeout: 30000,
+		timeout: 30000,
 		// agentOptions: {
 		// 	socksHost: 'localhost', 
 		// 	socksPort: 1080,
