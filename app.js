@@ -8,12 +8,12 @@ let setting = require('./settings')
 	request({
 		url: setting.channel.kanae,
 		strictSSL: true,
-		agentClass: Agent,
-		timeout: 30000,
-		agentOptions: {
-			socksHost: 'localhost', 
-			socksPort: 1080,
-		}
+		// agentClass: Agent,
+		// timeout: 30000,
+		// agentOptions: {
+		// 	socksHost: 'localhost', 
+		// 	socksPort: 1080,
+		// }
 	}, function(err, res) {
 		let $ = cheerio.load(res.body);
 		let link = $('div .yt-uix-slider-body').find('a')

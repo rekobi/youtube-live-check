@@ -7,7 +7,7 @@ do
     echo "no live at now"
     sleep 1m
   else
-  origin="$(youtube-dl --proxy socks5://127.0.0.1:1080 -g ${result})"
+  origin="$(youtube-dl -g ${result})"
   echo ${origin}
   sleep 1m
   fi
