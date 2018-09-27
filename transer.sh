@@ -9,7 +9,7 @@ do
   else
   origin="$(youtube-dl -f "[height <=? 720][tbr>500]" -g ${result})"
   streamCode=""
-  ffmpeg -i ${origin} -c:v copy -c:a aac -b:a 320k -ar 44100 -strict -2 -f flv ${streamCode}
+  ffmpeg -i ${origin} -c:v copy -c:a aac -b:a 320k -ar 44100 -bufsize 1000k -strict -2 -f flv ${streamCode}
   sleep 1m
   fi
 done
